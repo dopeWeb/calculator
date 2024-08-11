@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- New display for showing operations -->
+        <input id="history" placeholder="History" readonly>
+        <input id="res" placeholder="0" readonly>
+        
+        <div class="button-container">
+            <div class="operation-buttons">
+                <button onclick="claerInput()" class="operator">C</button>
+                <button onclick="deleteLastCharacter()" class="operator">DEL</button>
+                <button onclick="setPercentage()" class="operator">%</button>
+                <button onclick="division()" class="operator">÷</button>
+            </div>
+    
+            <div class="digit-buttons">
+                <button onclick="digit7()">7</button>
+                <button onclick="digit8()">8</button>
+                <button onclick="digit9()">9</button>
+                <button onclick="multiplication()" class="operator">x</button>
+            </div>
+    
+            <div class="digit-buttons">
+                <button onclick="digit4()">4</button>
+                <button onclick="digit5()">5</button>
+                <button onclick="digit6()">6</button>
+                <button onclick="minus()" class="operator">-</button>
+            </div>
+    
+            <div class="digit-buttons">
+                <button onclick="digit1()">1</button>
+                <button onclick="digit2()">2</button>
+                <button onclick="digit3()">3</button>
+                <button onclick="plus()" class="operator">+</button>
+            </div>
+    
+            <div class="bottom-buttons">
+                <button onclick="toggleSign()">+/-</button>
+                <button onclick="digit0()">0</button>
+                <button onclick="addDecimal()">.</button>
+                <button onclick="onEqualsClick()" class="equalBtn">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
