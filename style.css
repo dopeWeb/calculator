@@ -80,22 +80,3 @@ button.equalBtn {
     overflow: hidden; /* Hide any overflowed text */
 }
 
-.falling {
-    position: absolute;
-    font-size: 40px;
-    color: #ffffff;
-    opacity: 1;
-    animation: fall 2s forwards;
-    pointer-events: none; /* Prevent interaction with the falling element */
-}
-
-@keyframes fall {
-    from {
-        transform: translateY(-100%);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-}
